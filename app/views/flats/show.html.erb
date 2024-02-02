@@ -1,0 +1,32 @@
+
+<div class="banner" style="background-image: url('https://images.unsplash.com/photo-1590354893781-90ed27ce7ce9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+  </div>
+<div class="container">
+    <div class="row d-flex justify-content-evenly">
+        <div class="col-md-6">
+        <div class="card p-3 mb-3 bg-light"><h2><%=@flat.name%></h2></div>
+        <div class="card p-3 mb-3 bg-light"><%=@flat.address%>
+        </div>
+        <div class="card p-3 mb-3 bg-light"><%=@flat.description%></div>
+        <div class="card p-3 mb-3 bg-light">
+        <%= link_to "Back to List", flats_path %></div>
+        </div>
+        <div class="col-md-4">
+          <div class="bg-light border p-3 mt-0">
+            <div class="d-flex justify-content-between mt-3">
+              <p><strong>Details</strong></p>
+              <ul>
+              <li><i class="fa-solid fa-people-line">
+              <%=@flat.number_of_guests%>
+              </i></li>
+              <li><i class="fa-solid fa-euro-sign">
+              <%=@flat.price_per_night%>
+            </i></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

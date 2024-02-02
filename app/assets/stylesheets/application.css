@@ -1,15 +1,52 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.banner {
+  background-size: cover;
+  background-position: bottom;
+  padding: 200px 0;
+  margin-bottom: -40px;
+}
+.cards {
+  box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #F8F9FA;
+  height: auto;
+  margin: 8px;
+}
+.cards-content {
+  padding: 24px;
+}
+.container {
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 8px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.all-cards {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+.link {
+  background-color: white;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  border-top: 1px solid rgba(160,160,160,0.2);
+  border-bottom: 1px solid rgba(160,160,160,0.2);;
+  padding: 16px 24px;
+}
+.flat-card-image {
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
+/* .cards-info {
+  box-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #F8F9FA;
+  height: auto;
+  margin: 16px;
+  padding: 16px;
+} */
